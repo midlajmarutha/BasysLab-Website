@@ -1,0 +1,12 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom Secondary Theme Color */
+.text-secondary {
+    color: #004BAF;
+}
+
+.bg-secondary {
+    background-color: #004BAF;
+}

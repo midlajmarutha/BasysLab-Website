@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Software Service Company</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-900">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto py-6 px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900">Your Company</h1>
+            <nav>
+                <ul class="flex space-x-6 text-sm text-gray-700">
+                    <li><a href="#services" class="hover:text-blue-600">Services</a></li>
+                    <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                    <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('assets/img/hero-bg.jpg');">
+        <div class="text-center">
+            <h2 class="text-4xl font-extrabold text-white mb-4">Innovative Solutions for Your Business</h2>
+            <p class="text-lg text-white mb-8">We build software to help your company thrive.</p>
+            <a href="#contact" class="px-6 py-3 bg-blue-700 text-white rounded-full hover:bg-blue-800">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="services" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Web Development</h3>
+                    <p class="text-gray-600">Custom websites and applications to enhance your online presence.</p>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Mobile Apps</h3>
+                    <p class="text-gray-600">Cross-platform mobile apps that deliver seamless experiences.</p>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Cloud Solutions</h3>
+                    <p class="text-gray-600">Scalable cloud infrastructures for modern businesses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">About Us</h2>
+            <p class="text-lg text-gray-700">We are a team of passionate developers committed to providing cutting-edge solutions for businesses around the globe.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+            <form action="#" method="POST" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Your Message" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                </div>
+                <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Your Software Service Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
