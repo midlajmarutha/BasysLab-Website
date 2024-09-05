@@ -3,45 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BasysLab | Software Solutions</title>
+    <meta name="description" content="BasysLab is a software development company offering innovative solutions like web development, mobile apps, and cloud solutions.">
+    <meta name="keywords" content="BasysLab, software development, web development, mobile apps, cloud solutions">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <title>BasysLab | Innovative Software Solutions</title>
 </head>
-<body class="font-sans bg-gray-50 text-gray-900">
-    <header class="bg-white shadow-md">
+<body class="font-poppins bg-gray-50 text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
         <div class="container mx-auto py-6 px-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-gray-900">BasysLab</h1>
-            <nav>
+            <nav class="hidden md:block">
                 <ul class="flex space-x-6 text-sm text-gray-700">
                     <li><a href="#services" class="hover:text-blue-600">Services</a></li>
                     <li><a href="#about" class="hover:text-blue-600">About</a></li>
                     <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
                 </ul>
             </nav>
+            <div class="md:hidden">
+                <button id="navToggle" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
         </div>
     </header>
 
-    <section id="hero" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('assets/img/hero-bg.jpg');">
-        <div class="text-center">
-            <h2 class="text-4xl font-extrabold  mb-4">Innovative Solutions for Your Business</h2>
-            <p class="text-lg mb-8">We build software to help your company thrive.</p>
-            <a href="#contact" class="px-6 py-3 bg-blue-700 text-white rounded-full hover:bg-blue-800">Get in Touch</a>
+    <!-- Mobile Menu -->
+    <nav id="mobileMenu" class="hidden md:hidden bg-white shadow-md w-full py-4 absolute top-16 z-10">
+        <ul class="text-center text-gray-700">
+            <li class="py-2"><a href="#services" class="hover:text-blue-600">Services</a></li>
+            <li class="py-2"><a href="#about" class="hover:text-blue-600">About</a></li>
+            <li class="py-2"><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="h-screen bg-cover bg-center flex flex-col items-center justify-center relative z-0" style="background-image: url('assets/img/hero-bg.jpg');">
+        <div class="absolute w-60 h-60 rounded-full bg-gradient-to-t from-blue-700 to-transparent top-0 -z-10">
+        </div>
+        <div class="p-4 rounded-full bg-gray-100 bg-opacity-20 blur-3xl border border-white">
+            <p>Schedule a free consultation</p>
+        </div>
+        <div class="text-center px-4">
+            <h2 class="text-4xl md:text-5xl font-extrabold  mb-4 animate-fade-in">Innovative Solutions for Your Business</h2>
+            <p class="text-lg md:text-xl  mb-8">We build software to help your company thrive.</p>
+            <a href="#contact" class="px-6 py-3 bg-blue-700 text-white rounded-full hover:bg-blue-800 animate-bounce">Get in Touch</a>
         </div>
     </section>
 
-    <section id="services" class="py-16">
-        <div class="container mx-auto text-center">
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center px-4">
             <h2 class="text-3xl font-bold mb-8">Our Services</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="p-6 bg-white shadow-lg rounded-lg">
+                <div class="p-6 bg-white shadow-lg rounded-lg hover:scale-105 transition transform duration-300">
                     <h3 class="text-xl font-semibold mb-4">Web Development</h3>
                     <p class="text-gray-600">Custom websites and applications to enhance your online presence.</p>
                 </div>
-                <div class="p-6 bg-white shadow-lg rounded-lg">
+                <div class="p-6 bg-white shadow-lg rounded-lg hover:scale-105 transition transform duration-300">
                     <h3 class="text-xl font-semibold mb-4">Mobile Apps</h3>
                     <p class="text-gray-600">Cross-platform mobile apps that deliver seamless experiences.</p>
                 </div>
-                <div class="p-6 bg-white shadow-lg rounded-lg">
+                <div class="p-6 bg-white shadow-lg rounded-lg hover:scale-105 transition transform duration-300">
                     <h3 class="text-xl font-semibold mb-4">Cloud Solutions</h3>
                     <p class="text-gray-600">Scalable cloud infrastructures for modern businesses.</p>
                 </div>
@@ -49,31 +76,34 @@
         </div>
     </section>
 
-    <section id="about" class="py-16 bg-gray-100">
-        <div class="container mx-auto text-center">
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto text-center px-4">
             <h2 class="text-3xl font-bold mb-8">About Us</h2>
             <p class="text-lg text-gray-700">At BasysLab, we are a team of passionate developers committed to providing cutting-edge solutions for businesses around the globe.</p>
         </div>
     </section>
 
-    <section id="contact" class="py-16">
-        <div class="container mx-auto text-center">
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center px-4">
             <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
             <form action="#" method="POST" class="max-w-lg mx-auto">
                 <div class="mb-4">
-                    <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
                 </div>
                 <div class="mb-4">
-                    <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <input type="email" name="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
                 </div>
                 <div class="mb-4">
-                    <textarea placeholder="Your Message" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                    <textarea name="message" placeholder="Your Message" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required></textarea>
                 </div>
                 <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">Send Message</button>
             </form>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto text-center">
             <p>&copy; 2024 BasysLab. All rights reserved.</p>

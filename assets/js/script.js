@@ -6,3 +6,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+});
